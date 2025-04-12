@@ -34,7 +34,7 @@ package InterviewP;
 	
 	  public static void main(String[] args) {
 	  StarPattern starPattern = new StarPattern();
-	  starPattern.triangle();
+	  starPattern.starPattern();
 	  }
 	}
 
