@@ -36,6 +36,8 @@ public class CountAppend {
 	}
 	
 	
+	
+	
 	public void continueCheck()
 	{
 		System.out.println("Do you want to check another word.... Y / N");

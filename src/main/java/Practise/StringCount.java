@@ -51,7 +51,7 @@ public class StringCount {
 
 	public static void main(String[] args) {
 		StringCount stringCount = new StringCount();
-		stringCount.starPattern(4);
+		stringCount.Count();
 	}
 
 }

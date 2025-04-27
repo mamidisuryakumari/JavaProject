@@ -18,7 +18,7 @@ public class WordCount {
 	}
 	public static void main(String args[]) {
 		WordCount wordCount = new WordCount();
-		wordCount.wordCount1();
+		wordCount.wordCount();
 	}
 
 }
