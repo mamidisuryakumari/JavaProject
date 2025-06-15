@@ -1,7 +1,5 @@
 package days15program;
 
-import java.util.Scanner;
-
 public class AverageOfNumbers {
 	
 	public void averageOfNumbers() {

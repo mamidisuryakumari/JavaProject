@@ -33,8 +33,11 @@ public class wordCount {
 	
 	public void sentenseCount1() {
 		String sentense = "I am surya";
-		int sentenseCount = sentense.trim().split(" ").length;
-		System.out.println("Sentense count is:" + sentenseCount);
+		//int sentenseCount = sentense.trim().split(" ").length;
+		String[] sentenseCount = sentense.trim().split(" ");
+		
+		
+		System.out.println("Sentense count is:" + sentenseCount.length);
 	}
 	
 	
