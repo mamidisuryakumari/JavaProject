@@ -19,7 +19,7 @@ public class DuplicateCharacters {
 				}
 			}
 			if (count > 0) {
-				if(count >1)
+				if(count > 1)
 				{
 					break;
 				}

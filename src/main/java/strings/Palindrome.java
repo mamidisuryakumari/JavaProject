@@ -2,8 +2,8 @@ package strings;
 
 public class Palindrome {
 	
-	public void palindrome(String name) {
-	//	String name = "madam";
+	public void palindrome() {
+		String name = "madam";
 		String  reverse = "";
 		for(int i=name.length()-1; i>=0; i--) {
 		char currentCharacter = name.charAt(i);
@@ -18,7 +18,7 @@ public class Palindrome {
 	
 	public static void main(String[] args) {
 		Palindrome palindrome = new Palindrome();
-		palindrome.palindrome("surya");
+		palindrome.palindrome();
 	}
 
 }

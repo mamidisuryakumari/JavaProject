@@ -17,39 +17,12 @@ public class FrequencyOfCharacter {
 
 	}
 
-	public void frequencyOfCharacters1() {
-		String name1 = "This is a mango tree";
-		String name = name1.toLowerCase().replace(" ", "");
-
-		// Convert to char array
-		char[] chars = name.toCharArray();
-		for (char c : chars) {
-			System.out.print("'" + c + "' ");
-		}
-
-		// Track visited characters
-		boolean[] visited = new boolean[chars.length];
-
-		for (int i = 0; i < chars.length; i++) {
-			if (visited[i]) {
-				continue; // already counted this character
-			}
-
-			int count = 1;
-			for (int j = i + 1; j < chars.length; j++) {
-				if (chars[i] == chars[j]) {
-					count++;
-					visited[j] = true;
-				}
-			}
-
-			System.out.println("'" + chars[i] + "' appears " + count + " times");
-		}
-	}
+	
 
 	public void frequencyOfCharacters() {
-	String sentanse = "My name is Surya Kumari";
-	String name = sentanse.toLowerCase().replace(" ", "");
+	String sentense = "This is a mango tree";
+	String name = sentense.toLowerCase().replace(" ", "");
+	String output = "";
 	char[] ch = name.toCharArray();
 	boolean[] visted = new boolean[ch.length];
 	
@@ -64,16 +37,21 @@ public class FrequencyOfCharacter {
 			if(ch[i] == ch[j]) {
 			count++;
 			visted[j] = true;
+			
 		}
 		}
-		if(count>1) {
-			System.out.println("'" + ch[i] + "' appears " + count + " times");
-		}
+		output=ch[i]+String.valueOf(count);
+		System.out.print(output);
+		
+		//	System.out.println("'" + ch[i] + "' appears " + count + " times");
+		
 		
 		
 	}
 	
 	}
+	
+	
 
 	public static void main(String[] args) {
 
