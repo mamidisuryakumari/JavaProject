@@ -56,7 +56,7 @@ public class FrequencyOfCharacter {
 	public static void main(String[] args) {
 
 		FrequencyOfCharacter frequencyOfCharacter = new FrequencyOfCharacter();
-		frequencyOfCharacter.frequencyOfCharacters();
+		frequencyOfCharacter.frequencyOfCharacter();
 
 	}
 
