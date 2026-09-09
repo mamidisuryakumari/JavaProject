@@ -1,7 +1,23 @@
 package strings;
 
 public class DuplicateCharacters {
-	
+
+	public void duplicates(){
+		String name = "Surya Kumari";
+		String duplicates ="";
+		for(int i=0; i<name.length(); i++) {
+			for (int j = i+1; j < name.length(); j++) {
+				if (name.charAt(i) == name.charAt(j)) {
+					if (!duplicates.contains(String.valueOf(name.charAt(i)))) {
+						duplicates += name.charAt(i);
+					}
+				}
+			}
+		}
+		System.out.println("Duplicate characters: " + duplicates);
+	}
+
+
 	public void duplicateCharacters() {
 String name = "aabbc";
 String duplicate = "";
@@ -50,7 +66,7 @@ String duplicate = "";
 	
 	public static void main(String[] args) {
 		DuplicateCharacters duplicateCharacters = new DuplicateCharacters();
-		duplicateCharacters.duplicateCharacters();
+		duplicateCharacters.duplicates();
 	}
 
 }

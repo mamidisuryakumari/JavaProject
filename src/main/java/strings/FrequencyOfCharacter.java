@@ -11,52 +11,38 @@ public class FrequencyOfCharacter {
 			if (ch == name.charAt(i)) {
 				count++;
 			}
-			
 		}
 		System.out.println(ch + " appear " + count);
+	}
+
+	public void frequencyOfCharacters(){
+		String sentense = "This is  a mango tree";
+		String name = sentense.toLowerCase().replace(" ","");
+		String result ="";
+		for(int i=0; i<name.length(); i++){
+			char ch = name.charAt(i);
+			String str = String.valueOf(ch);
+			if(result.contains(str)){
+				continue;
+			}
+			int count =0;
+			for(int j=0; j<name.length(); j++){
+				if(name.charAt(i) == name.charAt(j)){
+					count++;
+				}
+			}
+			System.out.println(ch + " Appears " + count);
+			result += ch;
+		}
 
 	}
 
-	
 
-	public void frequencyOfCharacters() {
-	String sentense = "This is a mango tree";
-	String name = sentense.toLowerCase().replace(" ", "");
-	String output = "";
-	char[] ch = name.toCharArray();
-	boolean[] visted = new boolean[ch.length];
-	
-	
-	for(int i=0; i< name.length(); i++) {
-		if(visted[i]) {
-			continue;
-		}
-		int count =1;
-		
-		for(int j=i+1; j<name.length(); j++) {
-			if(ch[i] == ch[j]) {
-			count++;
-			visted[j] = true;
-			
-		}
-		}
-		output=ch[i]+String.valueOf(count);
-		System.out.print(output);
-		
-		//	System.out.println("'" + ch[i] + "' appears " + count + " times");
-		
-		
-		
-	}
-	
-	}
-	
-	
 
 	public static void main(String[] args) {
 
 		FrequencyOfCharacter frequencyOfCharacter = new FrequencyOfCharacter();
-		frequencyOfCharacter.frequencyOfCharacter();
+		frequencyOfCharacter.frequencyOfCharacters();
 
 	}
 

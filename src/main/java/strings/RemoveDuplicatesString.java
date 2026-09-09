@@ -2,7 +2,7 @@ package strings;
 
 public class RemoveDuplicatesString {
 	
-	public void removeDuplicates1() {
+	public void removeDuplicates() {
 		String name ="suryakumari";
 		
 		String result ="";
@@ -38,7 +38,7 @@ public class RemoveDuplicatesString {
 	System.out.println(result);
 	}
 
-	public void removeDuplicates() {
+	public void removeDuplicates1() {
 		String name = "nagaraju";
 		char[] ch = name.toCharArray();
 
@@ -77,7 +77,7 @@ public class RemoveDuplicatesString {
 
 		RemoveDuplicatesString rm = new RemoveDuplicatesString();
 	
-		rm.removeDuplicates1();
+		rm.removeDuplicates();
 	}
 
 }
